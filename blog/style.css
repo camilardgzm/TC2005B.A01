@@ -1,0 +1,216 @@
+
+html,body {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  max-width: 90%;
+  margin: 0 auto;
+  font-family: Roboto, sans-serif;
+}
+.img-logo{
+    width: 80px;
+    height: auto;
+}
+
+.img-usuario{
+    margin-right: 15px;
+    width: 27px;
+    height: auto;
+
+}
+
+h1{
+    text-align:center;
+    font-weight: bold;
+
+}
+
+
+hr{
+    width:100%;
+    height: 3;
+    margin-top: none;
+    color:rgb(171, 171, 171);
+
+}
+
+.img-inicial{
+    width: 100%;
+    margin-top: 20px;
+    opacity: 0.8;
+}
+nav ul {
+
+    list-style-type: none;
+    text-align: center;
+
+
+  }
+
+  header {
+    min-height: 5px;
+    display: flex;
+    align-items: center;
+    height: 30px;
+    margin-top: 10px;
+
+  }
+
+  nav {
+    flex:1;
+    display: flex;
+    justify-content: center;
+  }
+
+ 
+  nav ul {
+    padding: 0;
+    margin: 0 auto; /* Centra la lista en el espacio disponible de la navegación */
+    display: flex;
+    gap: 40px;
+    
+    
+}
+
+  nav a {
+    text-decoration: none;
+    color:rgb(0, 0, 0);
+    font-size: 15px;
+    font-weight: 550;
+    font-family: 'Arial', sans-serif;
+    
+
+  }
+
+
+  .input-search{
+    border-radius: 15px;
+    border: 3px solid;
+    width: 40%;
+    height: 10px;
+    min-width: 300px;
+    color: rgb(190, 187, 187);
+    margin-top: 10px;
+    margin-bottom: 20px;;
+    padding: 5px 0px 5px 10px;
+  }
+
+  .image-container{
+    display: flex;
+    width: 100%;
+    height: 300px;
+    background: url("imagenes/imagen-inicial.png") no-repeat center center;
+    background-size: cover;
+    align-items: center;
+    justify-content: center;
+
+  }
+
+  .overlay{
+    display: flex;
+    width: calc(100% - 10rem);
+    min-height: 200px;
+    background-color: rgba(255, 253, 250,0.6);
+    align-items: center;
+    justify-content: center;
+  }
+
+  .container-rect{
+    display:flex;
+    flex-wrap: wrap;
+    gap: 20px;
+
+
+
+  }
+
+  .container-column-content{
+    display: flex; /* This is crucial and was missing */
+    flex-direction: column; /* Aligns children vertically */
+    flex-grow: 1; /* Allows the column to grow to fill available space */
+    /* Remove height: 100%; as flex-grow will handle the filling */
+  
+  }
+
+  .rectangle{
+
+    margin-top: 20px;
+    min-height: 250px;
+    border-radius: 15px;
+    padding: 20px;
+    height: 100%;
+  }
+
+  .img-rect{
+    width: 180px;
+    height: auto;
+  }
+
+  .readMore-button{
+    background:rgba(0, 0, 0, 0.73);
+    font-weight: bold;
+    border: black solid;
+    border-width: 0.2px;
+    color:white;
+    height: 24px;
+    width: 85px;
+    border-radius: 5px;
+    padding: 3px, 3px, 3px, 3px;
+
+  }
+
+  .readMore-button:hover{
+    cursor:pointer;
+    background-color: black;
+    font-weight: bold;
+  }
+
+  .share-button{
+    background:rgba(255, 255, 255, 0.623);
+    font-weight: bold;
+    border: black solid;
+    border-width: 0.2px;
+    color:rgb(0, 0, 0);
+    height: 24px;
+    width: 85px;
+    border-radius: 5px;
+    padding: 3px, 3px, 3px, 3px;
+
+  }
+
+  .share-button:hover{
+    cursor:pointer;
+    background-color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
+    font-weight: bold;
+  }
+
+   .footer-style{
+    display:flex;
+    align-items: center;
+    justify-content: flex-end; 
+    font-family: 'Arial', sans-serif;
+
+   }
+
+   .img-redes{
+    width: 25px;
+    height: auto;
+    margin-left: 10px;
+   }
+
+  
+
+   .rectangle.green {
+     background-color: rgba(195, 253, 236,0.7);;
+   }
+
+   .rectangle.yellow {
+    background-color: rgba(255, 244, 144, 0.389);
+  }
+
+  .rectangle.pink {
+    background-color: rgba(251, 191, 216, 0.542);
+  }
