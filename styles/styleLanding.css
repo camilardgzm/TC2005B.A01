@@ -1,22 +1,28 @@
 
-.img-inicial{
-    height: 500px;
-    width: 100%;
-    opacity: 0.8;
-    margin-top: 25px;
+
+h1{
+  font-size: 50px;
 }
+
+h4{
+  font-size: 30px;
+}
+
 
 .img-logo{
-    height: 20px;
-    width: auto;
-    margin-left: 20px;
+  height: 20px;
+  width: auto;
+  
+
 }
 
+
 .img-navBar{
-    height: 15px;
-    width: auto;
-    padding: 20px;
+ width: 15px;
+ height: auto;
+ margin-left: 10px;
 }
+
 
 nav{
     display:flex;
@@ -35,11 +41,16 @@ nav a {
   nav ul {
     
     display:flex;
-    gap: 40px;
+    gap: 30px;
+  
+  
+    }
     
     
-}
+    
+
   header {
+    margin: 10px;
     min-height: 5px;
     display: flex;
     align-items: center;
@@ -48,20 +59,174 @@ nav a {
 
   }
 
+
+
   .logo-bar{
     display: flex;
     justify-content: center;
     gap: 10%;
+    margin-bottom: 40px;
+ 
+
   }
 
-  .logo{
+  .logos{
     height: 60px;
     width: auto;
+
   }
+
+ 
+
+  .image-container{
+    display: flex;
+    height: 500px;
+    width: 100%;
+    opacity: 0.8;
+    margin-top: 25px;
+    background: url("/imagenes/imagen-principal.png") no-repeat center center;
+    background-size: cover;
+    margin-bottom: 40px;
+
+
+  }
+
+  .overlay{
+    margin-left: 30px;
+    display: flex;
+    min-height: 200px;
+
+    flex-direction: column;
+    color:rgba(255, 255, 255, 0.777);
+    justify-content: space-around;
+ 
+ 
+  }
+
+
+  .button-container{
+    display: flex;
+    flex-direction: column; /* Asegúrate de que los elementos estén apilados verticalmente */
+    
+  }
+
+  .more-information-button{
+    background:rgba(255, 255, 255, 0.73);
+    font-weight: bold;
+    border: black solid;
+    border-width: 2px;
+    color:rgba(0, 0, 0, 0.885);
+    height: 40px;
+    width: 150px;
+    border-radius: 5px;
+    padding: 3px, 3px, 3px, 3px;
+
+
+  }
+
+ .more-information-button:hover{
+    
+    cursor:pointer;
+    background-color: rgb(255, 255, 255);
+    font-weight: bold;
+  }
+
+ 
+
+  .cont-text{
+    
+    width: 90%;
+    display: flex;
+    gap: 7%;
+    justify-content: center;
+    margin: 0 auto;
+    
+  }
+
+  .rectangle{
+
+    margin: 0 auto;
+    width: 300px;
+    border: solid rgba(0, 0, 0, 0.485) 2px;
+    border-radius: 8px;
+    padding: 20px;
+  
+   
+    
+  }
+
+  .rect-button{
+    border: solid rgb(0, 0, 0);
+    background-color: rgba(0, 0, 0, 0.84) ;
+    color: rgba(255, 255, 255, 0.894);
+    border-radius: 5px;
+    height: 25px;
+
+  }
+
+  .rectangle.red{
+    background-color: rgba(255, 183, 183, 0.428);
+  }
+
+  .rectangle.blue{
+    background-color: rgba(189, 214, 255, 0.408);
+  }
+
+  .rectangle.green{
+    background-color: rgba(199, 254, 203, 0.384);
+  }
+
+ 
+
+
+  .cont-collage{
+
+    align-items: center;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap:10px;
+    margin-right: 30px;
+    
+  }
+
+.cont-collage-row{
+  display:flex;
+  flex-direction: row;
+  gap:10px;
+  justify-content: center;
+}
 
 .img-collage{
     width: 250px;
-    height: auto;
+    height: 250px;
+  
+}
+
+
+.cont-column-text{
+ 
+  flex: 1;
+  display: flex;
+  flex-direction: column; 
+  margin-left: 90px;
+  margin-right: 50px;
+  font-size: 20px;
+}
+ 
+
+
+.cont-text-collage{
+
+
+  justify-content: center;
+  flex-wrap: wrap;
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+  margin-top: 70px;
+
 }
 
 .img-redes{
@@ -71,11 +236,78 @@ nav a {
    }
 
 .footer-style{
-    margin-top: 40px;
+    margin-top: 50px;
     margin-bottom: 20px;;
     display:flex;
     align-items: center;
     justify-content: center;
-    
+    gap: 20px;
+   
+  
 }
 
+
+
+@media screen and (max-width: 678px){
+  nav a{
+    font-size: 10px;
+  }
+
+  nav ul {
+    gap: 15px;
+  }
+
+  .img-logo{
+    height: 16px;
+    width: auto;
+  }
+
+  .img-navBar{
+    width: 12px;
+    height: auto;
+    margin-left: 8px;
+   }
+
+   .logo-bar{
+    gap: 7%;
+  }
+
+  .logos{
+    height: 40px;
+    width: auto;
+  }
+
+  .cont-text{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 5px;
+    width: 100%;
+    height: auto;
+    gap: 20px; /* Ajusta el gap para columnas */
+  }
+
+  .cont-text-collage{
+    margin-top: 25px;
+
+  }
+
+  .cont-column-text{
+    font-size: 17px;
+    margin-right: 10px;
+    margin-left: 10px;
+    margin-bottom: 20px;;
+  }
+
+  .img-collage{
+    width: 200px;
+    height: 200px;
+  
+}
+
+.cont-collage{
+
+  margin-top: 30px;
+  margin: 0;
+}
+
+}

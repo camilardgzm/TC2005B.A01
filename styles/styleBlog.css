@@ -5,7 +5,7 @@ html,body {
 }
 
 body {
-  max-width: 90%;
+  max-width: 95%;
   margin: 0 auto;
   font-family: Roboto, sans-serif;
 }
@@ -35,6 +35,7 @@ hr{
     color:rgb(171, 171, 171);
 
 }
+
 
 .img-inicial{
     width: 100%;
@@ -83,6 +84,8 @@ nav ul {
     
 
   }
+
+ 
 
 
   .input-search{
@@ -145,6 +148,11 @@ nav ul {
 
   .img-rect{
     width: 180px;
+    height: auto;
+  }
+
+  .img-house{
+    width: 450px;
     height: auto;
   }
 
@@ -213,4 +221,36 @@ nav ul {
 
   .rectangle.pink {
     background-color: rgba(251, 191, 216, 0.542);
+  }
+
+  @media screen and (max-width: 678px){
+    .img-logo{
+      width: 65px;
+      height: auto;
+  }
+  
+  .img-usuario{
+      margin-right: 15px;
+      width: 19px;
+      height: auto;
+  
+  }
+  
+    nav a{
+      font-size: 10px;
+    }
+  
+    nav ul{
+      gap: 15px;
+    }
+
+    .container-column-content{
+      width: 100%;
+    }
+
+    .img-house{
+      width: 250px;
+      height: auto;
+    }
+
   }
