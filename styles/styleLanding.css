@@ -84,6 +84,8 @@ nav a {
     width: 100%;
     opacity: 0.8;
     margin-top: 25px;
+    background: url("../imagenes/imagen-principal.png") no-repeat center center;
+    background-size: cover;
     margin-bottom: 40px;
 
 
